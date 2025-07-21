@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="author" content="Faisal Isam">
+    <meta name="description" content="Personal To-Do List">
+</head>
+
+<body>
+    <header class="upper-grid">
+        <div class="upper-left-section">
+            <p class="todo-day"></p>
+            <button class="todo-number" onclick="triggerDatePicker()"></button>
+            <input type="date" class="todo-date-picker" oninput="changeDate()">
+        </div>
+
+
+        <div class="upper-right-section">
+            <input class="todo-input" placeholder="Write Task..." onkeydown="
+                
+                    keyPressed(event);
+            
+                ">
+            <button class="todo-add-task" onclick="
+                
+                    addElementToList();
+                
+                ">+</button>
+        </div>
+    </header>
+
+    <main class="todo-grid">
+        <div class="middle-section">
+        </div>
+    </main>
+
+    <img src="./images/diglett.png" class="lower-img">
+</body>
+
+<script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
+<script src="to-do-list.js"></script>
+
+</html>
